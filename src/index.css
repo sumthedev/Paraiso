@@ -351,6 +351,16 @@ span {
   line-height: 18px; /* 150% */
 }
 
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   background-color: var(--primary);
   border-radius: 14px;
@@ -690,5 +700,77 @@ span {
   }
   100% {
     transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 850px) {
+  .sidebar {
+    display: none;
+  }
+
+  .navbar {
+    left: 0;
+  }
+
+  .nav-bell {
+    display: none;
+  }
+
+  .nav-search {
+    width: 306px;
+    height: 48px;
+  }
+
+  .text-01 {
+    font-size: 15px;
+  }
+
+  .main {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    margin-top: 10px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+  }
+
+  /* .text-08 {
+    font-size: 26px;
+  }
+
+  .text-09 {
+    font-size: 16px;
+  } */
+
+  .chart-div {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 30px;
+  }
+
+  .chart-div > div {
+    width: 100%;
+    max-width: 490px;
+  }
+
+  .chart-div svg {
+    width: 100%;
+    max-width: 490px;
+  }
+
+  .user-review {
+    text-align: center;
   }
 }

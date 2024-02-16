@@ -8,13 +8,12 @@ function Dashboard() {
       <div className="dashboard-container">
         <div className="flex w-full bg-black-200 flex-col">
           <div className="w-full">
-            <div className="flex  flex-row">
+            <div className="flex card-container  ">
               <div
-                className="card"
+                className="card "
                 style={{
                   width: "calc(33.33% - 20px)",
-                  minWidth: "250px",
-
+                  minWidth: "335px",
                   height: "175px",
                   marginRight: "20px",
                 }}
@@ -44,7 +43,7 @@ function Dashboard() {
                 className="card"
                 style={{
                   width: "calc(33.33% - 20px)",
-                  minWidth: "250px",
+                  minWidth: "335px",
 
                   height: "175px",
                   marginRight: "20px",
@@ -75,8 +74,8 @@ function Dashboard() {
                 className="card"
                 style={{
                   width: "calc(33.33% - 20px)",
-                  minWidth: "250px",
-
+                  minWidth: "335px",
+                  marginTop: "10px",
                   height: "175px",
                   marginRight: "20px",
                 }}
@@ -130,7 +129,7 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="user-review">
             <h1 className="text-white mt-[20px] text-19">User Reviews</h1>
           </div>
 

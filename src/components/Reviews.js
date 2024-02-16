@@ -2,7 +2,7 @@ import { FaStar, FaRegStar } from "react-icons/fa";
 function Reviews() {
   return (
     <>
-      <div className="flex  flex-row mt-[20px] mb-[20px]">
+      <div className="card-container mt-[20px] mb-[20px]">
         <div
           className="card"
           style={{
