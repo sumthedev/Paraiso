@@ -746,14 +746,6 @@ span {
     max-width: calc(33.33% - 20px);
   }
 
-  /* .text-08 {
-    font-size: 26px;
-  }
-
-  .text-09 {
-    font-size: 16px;
-  } */
-
   .chart-div {
     width: 100%;
     max-width: 500px;

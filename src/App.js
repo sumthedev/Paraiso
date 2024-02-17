@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+
 // Layouts
 import RootLayout from "./Layout/RootLayout";
 // Pages
@@ -23,6 +24,7 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogout = () => {
+    // Implement your logout logic here
     setIsLoggedIn(false);
   };
 
@@ -53,9 +55,5 @@ export default function App() {
     )
   );
 
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
