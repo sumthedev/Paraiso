@@ -75,7 +75,7 @@ function Dashboard() {
                 style={{
                   width: "calc(33.33% - 20px)",
                   minWidth: "335px",
-                  marginTop: "10px",
+
                   height: "175px",
                   marginRight: "20px",
                 }}
@@ -124,9 +124,7 @@ function Dashboard() {
                   </span>
                 </div>
               </div>
-              <div className=" mt-[20px]">
-                <Chart style={{ alignSelf: "center" }} />
-              </div>
+              <Chart />
             </div>
           </div>
           <div className="user-review">

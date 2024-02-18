@@ -19,6 +19,9 @@
 body {
   font-family: "Recoleta", sans-serif;
   background-color: var(--third);
+
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -371,6 +374,16 @@ span {
   border-radius: 14px;
 }
 
+#chart {
+  width: 100%;
+}
+
+.chart-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 /* user-table */
 
 #customers {
@@ -646,12 +659,6 @@ span {
   line-height: normal;
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 97%;
-  }
-}
-
 /* Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 12px;
@@ -704,16 +711,13 @@ span {
 }
 
 @media (max-width: 850px) {
-  .sidebar {
+  .sidebar,
+  .nav-bell {
     display: none;
   }
 
   .navbar {
     left: 0;
-  }
-
-  .nav-bell {
-    display: none;
   }
 
   .nav-search {
@@ -723,6 +727,10 @@ span {
 
   .text-01 {
     font-size: 15px;
+  }
+
+  .user-review {
+    text-align: center;
   }
 
   .main {
@@ -751,22 +759,13 @@ span {
     max-width: 500px;
     margin-left: 30px;
   }
-
-  .chart-div > div {
-    width: 100%;
-    max-width: 490px;
-  }
-
-  .chart-div svg {
-    width: 100%;
-    max-width: 490px;
-  }
-
-  .user-review {
-    text-align: center;
-  }
-
   .logo-side {
     display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 97%;
   }
 }
