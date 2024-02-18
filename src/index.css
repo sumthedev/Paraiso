@@ -768,4 +768,9 @@ span {
   .container {
     max-width: 97%;
   }
+
+  .logo-side {
+    display: none;
+}
+
 }
