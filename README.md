@@ -1,3 +1,8 @@
+
+# First Install dependencies
+
+### `npm install or npm i`
+
 # Getting Started with Create React App
 
 ### `npm start`
