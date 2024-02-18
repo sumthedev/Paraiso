@@ -48,14 +48,14 @@ const CustomTooltip = ({ active, payload }) => {
 export default function Chart() {
   return (
     <div id="chart">
-      <div style={{ height: 300, width: "100%" }}>
+      <div style={{ height: 250, width: "100%" }}>
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={data}
             margin={{ top: 5, right: 30, left: 10, bottom: 5 }}
           >
-            <XAxis dataKey="name" />
-            <YAxis tickFormatter={formatYAxisTick} />
+            <XAxis dataKey="name" tick={{ fill: "white" }} />
+            <YAxis tickFormatter={formatYAxisTick} tick={{ fill: "white" }} />
             <Tooltip content={<CustomTooltip />} />
             <Line
               type="monotone"

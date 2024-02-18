@@ -46,8 +46,13 @@ body {
   z-index: 100;
   background-color: var(--primary);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
 }
 
+.sidebar.open {
+  display: block;
+  z-index: 990;
+}
 .logo-text {
   color: var(--white);
   font-size: 27px;
@@ -721,7 +726,7 @@ span {
   }
 
   .nav-search {
-    width: 306px;
+    width: 280px;
     height: 48px;
   }
 
@@ -733,12 +738,15 @@ span {
     text-align: center;
   }
 
+  .chart-div-01 {
+    width: 100%;
+    max-width: 500px;
+  }
   .main {
     margin-left: 0;
     display: flex;
     justify-content: center;
     max-width: 100%;
-    overflow-x: hidden;
   }
   .card-container {
     display: flex;
@@ -757,7 +765,7 @@ span {
   .chart-div {
     width: 100%;
     max-width: 500px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .logo-side {
     display: none;
@@ -768,9 +776,19 @@ span {
   .container {
     max-width: 97%;
   }
-
-  .logo-side {
-    display: none;
 }
 
+@media (max-width: 500px) {
+  .chart-div {
+    max-width: 370px;
+  }
+
+  .chart-div-01 {
+    max-width: 500px;
+  }
+
+  .nav-search {
+    width: 210px;
+    height: 48px;
+  }
 }

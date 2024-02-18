@@ -8,10 +8,10 @@ import { BiDish } from "react-icons/bi";
 import { MdOutlineInsertChart } from "react-icons/md";
 import { IoIosLogOut } from "react-icons/io";
 
-function Sidebar() {
+function Sidebar({ isOpen }) {
   return (
     <>
-      <div className="sidebar flex flex-col">
+      <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <div className="flex flex-row p-[30px]">
           <img src="/images/icons/paraiso.svg" alt="logo" />
           <h1 className="logo-text p-[10px]">

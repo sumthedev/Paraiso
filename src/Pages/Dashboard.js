@@ -103,7 +103,7 @@ function Dashboard() {
               </div>
             </div>
             <div
-              className="chart-div p-[10px]"
+              className="chart-div p-[20px]"
               style={{
                 marginTop: "10px",
                 display: "flex",

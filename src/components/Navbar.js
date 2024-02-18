@@ -1,7 +1,23 @@
+import { useState, useEffect } from "react";
 import { GoBell } from "react-icons/go";
 import { CiSearch } from "react-icons/ci";
+import { CiMenuFries } from "react-icons/ci";
 
-function Navbar() {
+function Navbar({ toggleSidebar }) {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <nav className="navbar flex items-center justify-between p-[18px]">
       <div className="flex items-center">
@@ -16,10 +32,16 @@ function Navbar() {
         <input className="ml-[-10px]" type="text" placeholder="Search" />
       </div>
 
-      <div className="flex items-center">
-        <h1 className="text-white mr-2 text-02">Mr.Admin</h1>
-        <img src="/images/admin.png" alt="admin" />
-      </div>
+      {windowWidth <= 850 ? (
+        <div className="flex items-center">
+          <CiMenuFries className="text-white mr-2" onClick={toggleSidebar} />
+        </div>
+      ) : (
+        <div className="flex items-center">
+          <h1 className="text-white mr-2 text-02">Mr.Admin</h1>
+          <img src="/images/admin.png" alt="admin" />
+        </div>
+      )}
     </nav>
   );
 }
