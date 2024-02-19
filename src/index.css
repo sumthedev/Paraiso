@@ -784,6 +784,16 @@ span {
   .logo-side {
     display: none;
   }
+
+  .user-check-01,
+  .user-check {
+    width: 16px;
+    height: 15px;
+  }
+  .icon-03,
+  .icon-04 {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1280px) {
