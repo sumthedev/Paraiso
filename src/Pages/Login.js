@@ -1,3 +1,4 @@
+// Login.js
 import React, { useState } from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineLock } from "react-icons/ai";
@@ -15,6 +16,15 @@ function Login({ onLogin }) {
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
+  };
+
+  const handleLogin = () => {
+    if (email.trim() === "" || password.trim() === "") {
+      alert("Please enter both email and password.");
+      return;
+    }
+    localStorage.setItem("email", email);
+    onLogin();
   };
 
   return (
@@ -65,7 +75,7 @@ function Login({ onLogin }) {
               </a>
             </div>
             <div className="btn-01 mt-[50px] ml-[40px]">
-              <button onClick={onLogin}>
+              <button onClick={handleLogin}>
                 <span className="ml-[20px] flex mt-[-35px] p-[15px] text-07">
                   Log into your account
                 </span>

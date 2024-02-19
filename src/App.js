@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Route,
   createBrowserRouter,
@@ -23,8 +23,14 @@ import Menue from "./Pages/Menue";
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    const storedEmail = localStorage.getItem("email");
+    if (storedEmail) {
+      setIsLoggedIn(true);
+    }
+  }, []);
   const handleLogout = () => {
-    // Implement your logout logic here
+    localStorage.removeItem("email");
     setIsLoggedIn(false);
   };
 
