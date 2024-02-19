@@ -29,12 +29,19 @@ function Navbar({ toggleSidebar }) {
 
       <div className="nav-search flex items-center">
         <CiSearch className="text-white search " />
-        <input className="ml-[-10px]" type="text" placeholder="Search" />
+        <input
+          className="ml-[-10px] nav-input"
+          type="text"
+          placeholder="Search"
+        />
       </div>
 
       {windowWidth <= 850 ? (
         <div className="flex items-center">
-          <CiMenuFries className="text-white mr-2" onClick={toggleSidebar} />
+          <CiMenuFries
+            className="text-white menu mr-2"
+            onClick={toggleSidebar}
+          />
         </div>
       ) : (
         <div className="flex items-center">

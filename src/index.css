@@ -743,17 +743,14 @@ span {
     max-width: 500px;
   }
   .main {
-    margin-left: 0;
+    margin-left: 10px; /* Adjust this value as needed */
+    margin-right: 10px; /* Adjust this value as needed */
     display: flex;
     justify-content: center;
     max-width: 100%;
   }
   .card-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
   }
 
   .card {
@@ -780,15 +777,32 @@ span {
 
 @media (max-width: 500px) {
   .chart-div {
-    max-width: 370px;
+    max-width: 350px;
+    background-color: #2a2a2a;
   }
 
+  .chart-text {
+    display: none;
+  }
   .chart-div-01 {
-    max-width: 500px;
+    max-width: 350px;
   }
 
   .nav-search {
     width: 210px;
     height: 48px;
+  }
+
+  .nav-input {
+    width: 50px;
+  }
+
+  .menu {
+    margin-left: 10px;
+  }
+
+  .main {
+    margin-left: 10px; /* Adjust this value as needed */
+    margin-right: 10px; /* Adjust this value as needed */
   }
 }

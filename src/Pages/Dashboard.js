@@ -111,7 +111,7 @@ function Dashboard() {
                 alignItems: "center",
               }}
             >
-              <div className="flex  justify-between items-center  w-full">
+              <div className="flex  justify-between items-center chart-text w-full">
                 <h1 className="text-15 ml-[55px] ">Total Revenue</h1>
                 <div className="flex items-center ">
                   <span className="text-white flex items-center">
