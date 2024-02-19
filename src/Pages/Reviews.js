@@ -9,7 +9,9 @@ function Reviews() {
     <>
       <div className="w-full">
         <div className="">
-          <h1 className="text-white text-11">Customer Reviews</h1>
+          <h1 className="text-white text-11 user-table-text">
+            Customer Reviews
+          </h1>
           <h1 className="hidden-text">Customer Reviews</h1>
         </div>
         <div className="user-table">

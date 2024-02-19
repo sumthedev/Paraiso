@@ -9,7 +9,7 @@ function Foods() {
     <>
       <div className="w-full">
         <div className="">
-          <h1 className="text-white text-11">All Users</h1>
+          <h1 className="text-white text-11 user-table-text">Foods</h1>
           <h1 className="hidden-text">All users</h1>
         </div>
         <div className="user-table">

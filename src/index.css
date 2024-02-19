@@ -715,10 +715,27 @@ span {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .sidebar,
   .nav-bell {
     display: none;
+  }
+
+  #customers {
+    font-size: 12px;
+  }
+
+  .user-table {
+    overflow-x: auto;
+  }
+
+  .user-table-text {
+    text-align: center;
+  }
+
+  #customers th,
+  #customers td {
+    padding: 5px;
   }
 
   .navbar {
@@ -802,7 +819,7 @@ span {
   }
 
   .main {
-    margin-left: 10px; /* Adjust this value as needed */
-    margin-right: 10px; /* Adjust this value as needed */
+    margin-left: 20px;
+    margin-right: 10px;
   }
 }

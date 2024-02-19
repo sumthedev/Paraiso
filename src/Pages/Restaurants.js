@@ -16,7 +16,9 @@ function Restaurants() {
     <>
       <div className="w-full">
         <div className="">
-          <h1 className="text-white text-11">Registered Restaurants</h1>
+          <h1 className="text-white text-11 user-table-text">
+            Registered Restaurants
+          </h1>
           <h1 className="hidden-text">Customer Reviews</h1>
         </div>
         <div className="user-table">
