@@ -755,6 +755,20 @@ span {
     text-align: center;
   }
 
+  .review-text {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+
+  .review-text.expanded {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: inherit;
+  }
+
   .chart-div-01 {
     width: 100%;
     max-width: 500px;
@@ -793,6 +807,15 @@ span {
   .icon-03,
   .icon-04 {
     font-size: 18px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-text {
+    font-size: 20px;
   }
 }
 

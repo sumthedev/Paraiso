@@ -15,7 +15,7 @@ function RootLayout() {
     <>
       <div className="container">
         <div>
-          <Sidebar isOpen={isSidebarOpen} />
+          <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         </div>
         <div>
           <Navbar toggleSidebar={toggleSidebar} />
